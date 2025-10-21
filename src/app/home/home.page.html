@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>Fotos con Ubicación</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" *ngFor="let photo of photoService.photos">
+        <ion-card class="photo-card">
+          <img [src]="photo.webviewPath" class="photo-img" />
+          <ion-card-content>
+            <p><strong>Latitud:</strong> {{ photo.latitude }}</p>
+            <p><strong>Longitud:</strong> {{ photo.longitude }}</p>
+            <a [href]="photo.mapsLink" target="_blank" class="maps-link">Ver en Google Maps</a>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+    <ion-fab-button color="secondary" class="fab-camera" (click)="addPhotoToGallery()">
+      <ion-icon name="camera"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
