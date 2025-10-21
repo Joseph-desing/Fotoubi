@@ -1,18 +1,25 @@
-## App de Fotos con Ubicación (Ionic + Angular)
+# DeberFotoUbi
 
-Este proyecto fue desarrollado con Ionic Framework y Angular (NgModules).
-La aplicación permite capturar o subir fotografías desde el dispositivo y muestra tanto la imagen como la ubicación geográfica exacta donde fue tomada.
+Fotos y GPS
+Tomando en cuenta la aplicación de fotos y la aplicación ubicada en: https://github.com/jzaldumbide/MiUbicacionAPP_2025B.git
 
-## Características principales
+Implementar una aplicación que me permita tomar fotos y guardar la ubicación donde fue tomada en un archivo de texto.
 
- Captura o selección de fotos usando la cámara o galería del dispositivo.
+La aplicación debe mostrar la foto y un link (hipervínculo) de google maps para acceder a la ubicación.
 
-- Geolocalización automática (latitud y longitud) mediante el plugin de Geolocation.
-- Almacenamiento local de imágenes y coordenadas con Capacitor Filesystem y Preferences.
-- Visualización en Google Maps mediante un enlace directo a la ubicación.
-- Persistencia de datos: las fotos y ubicaciones se conservan aunque se cierre la aplicación.
+El link de Google Maps tiene la estructura:
 
-<img width="321" height="539" alt="image" src="https://github.com/user-attachments/assets/1f0425a3-53fc-4a84-8063-10f4d0335cac" />
-<img width="325" height="646" alt="image" src="https://github.com/user-attachments/assets/31d64df2-ca55-4228-88b9-43f0f238cd7b" />
-<img width="312" height="656" alt="image" src="https://github.com/user-attachments/assets/464b3354-0919-48ed-bffa-809179386c26" />
+https://www.google.com/maps/@-0.2106699335048009,-78.48820656605636
+
+Entregable: Repositorio de github con un readme detallado y el código.
+
+<img width="1918" height="1078" alt="image" src="https://github.com/user-attachments/assets/59c43df3-1cd2-4027-9f93-4e92d3aa2b47" />
+
+Codigos usados
+<img width="1918" height="1025" alt="image" src="https://github.com/user-attachments/assets/568c0968-b498-493d-b513-c20b12b83dae" />
+<img width="1917" height="1025" alt="image" src="https://github.com/user-attachments/assets/4582f076-cead-4a94-a416-dde26e3620dd" />
+
+Probado en Android
+<img width="1918" height="1017" alt="image" src="https://github.com/user-attachments/assets/cd912533-c165-485f-8ffa-9860a54cc099" />
+
 
